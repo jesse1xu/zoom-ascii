@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Zoom ASCII Art
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Paste a zoom invitation and create an ASCII art depiction.
 
 ## Available Scripts
 
