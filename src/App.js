@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import './App.css';
 import { Button, withStyles } from '@material-ui/core';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
 const styles = {
@@ -134,14 +135,16 @@ function App(props) {
             variant="outlined"
             onChange={handleChange}
           />
-        <Button 
-          className= {classes.submitButton}
-          variant="contained" 
-          color="primary" 
-          size="large" 
-          type="submit">
-          {buttonText}
-        </Button>
+        <CopyToClipboard text={value}>
+          <Button 
+            className= {classes.submitButton}
+            variant="contained" 
+            color="primary" 
+            size="large" 
+            type="submit">
+            {buttonText}
+          </Button>
+        </CopyToClipboard>
       </form>
     </div>
   );
